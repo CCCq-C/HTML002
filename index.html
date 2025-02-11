@@ -12,15 +12,16 @@
 <body>
     <!-- 导航栏 -->
     <nav class="nav">
-        <div class="nav-brand">小黄城堡</div>
-        <button class="nav-toggle" aria-label="切换导航菜单">
-            <span class="hamburger"></span>
-        </button>
+        <div class="mobile-menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <ul class="nav-list">
-            <li class="nav-item"><a href="#home" class="active">首页</a></li>
+            <li class="nav-item"><a href="#home">首页</a></li>
             <li class="nav-item"><a href="#about">关于我们</a></li>
-            <li class="nav-item"><a href="#marketing">全链路推广</a></li>
-            <li class="nav-item"><a href="#services">服务</a></li>
+            <li class="nav-item"><a href="#marketing">营销服务</a></li>
+            <li class="nav-item"><a href="#services">服务内容</a></li>
             <li class="nav-item"><a href="#partners">合作伙伴</a></li>
             <li class="nav-item"><a href="#contact">联系我们</a></li>
         </ul>
@@ -47,10 +48,10 @@
             <!-- 我们的承诺 -->
             <div class="promise-section text-left">
                 <h2 class="section-title fade-up">我们的承诺</h2>
-                <div class="quote fade-up">
-                    "说实话，做实事，一起走更远的路"
+                <div class="promise-content fade-up">
+                    <p class="promise-text">说实话，做实事，一起走更远的路</p>
+                    <p class="promise-text">我们拒绝浅层服务交易，专注与合作伙伴构建<span class="highlight">深度战略绑定关系</span></p>
                 </div>
-                <p class="section-text fade-up">我们拒绝浅层服务交易，专注与合作伙伴构建深度战略绑定关系</p>
             </div>
             
             <!-- 我们是谁 -->
@@ -82,9 +83,32 @@
                 </div>
                 
                 <!-- 增长方法论 -->
-                <div class="growth-cases">
-                    <h4 class="case-subtitle">被验证的增长方法论(5年合作案例)</h4>
-                    <ul class="case-list">
+                <div class="growth-header">
+                    <svg width="0" height="0">
+                        <defs>
+                            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
+                                <feColorMatrix in="blur" type="matrix" values="
+                                    0 0 0 0 0
+                                    0 1 0 0 0
+                                    0 0 0 0 0
+                                    0 0 0 15 -5" result="glow"/>
+                                <feMerge>
+                                    <feMergeNode in="glow"/>
+                                    <feMergeNode in="glow"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                    </svg>
+                    <div class="neon-image-container">
+                        <div class="neon-outline"></div>
+                        <img src="images\3一.png" alt="增长数据" class="growth-image" id="neonImage">
+                    </div>
+                    <h2 class="growth-title">被验证的增长方法论(5年合作案例)</h2>
+                </div>
+                <div class="growth-content">
+                    <ul class="growth-list">
                         <li>2019年携手洁北道远从0构建线上营销和私域体系，首年创收超千万</li>
                         <li>2021年布局兴趣电商赛道,两年实现单品销量破亿,登顶抖音高中教辅书排行榜</li>
                         <li>2024年 新品上线全平台布局，单品年GMV突破三亿</li>
@@ -99,23 +123,35 @@
         <div class="section-content">
             <h2 class="section-title fade-up">全链路线上推广与销售转化</h2>
             <div class="service-grid fade-up">
-                <div class="service-item">
-                    <h3 class="service-title">品牌推广</h3>
+                <div class="service-row">
+                    <div class="service-item">
+                        <h3>品牌推广</h3>
+                        <p>打造独特品牌形象，提升品牌知名度和影响力</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>IP孵化</h3>
+                        <p>深度挖掘品牌价值，打造专属IP形象</p>
+                    </div>
                 </div>
-                <div class="service-item">
-                    <h3 class="service-title">IP孵化</h3>
+                <div class="service-row">
+                    <div class="service-item">
+                        <h3>原创视频</h3>
+                        <p>高质量视频内容制作，吸引目标受众</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>直播带货</h3>
+                        <p>专业直播团队，提升转化率</p>
+                    </div>
                 </div>
-                <div class="service-item">
-                    <h3 class="service-title">原创视频与文案</h3>
-                </div>
-                <div class="service-item">
-                    <h3 class="service-title">直播带货</h3>
-                </div>
-                <div class="service-item">
-                    <h3 class="service-title">全平台店铺运营</h3>
-                </div>
-                <div class="service-item">
-                    <h3 class="service-title">私域管理与电销</h3>
+                <div class="service-row">
+                    <div class="service-item">
+                        <h3>全平台店铺运营</h3>
+                        <p>多平台矩阵运营，最大化品牌曝光</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>私域管理与电销</h3>
+                        <p>精细化私域运营，提升客户忠诚度</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -184,12 +220,35 @@
             <h2 class="section-title fade-up">合作伙伴</h2>
             <p class="section-text fade-up">我们深耕行业多年，为新兴品牌保驾护航，少走弯路，让每一分投入精准转化为品牌影响力与销售业绩。</p>
             <div class="partner-grid fade-up">
-                <!-- 28个品牌logo占位符 -->
-                ${Array(28).fill(0).map((_, i) => `
-                <div class="partner-logo-placeholder">
-                    品牌 ${i + 1}
+                <div class="main-partner">
+                    <img src="images/LOGOGOO.png" alt="主要合作伙伴" class="main-logo">
                 </div>
-                `).join('')}
+                <div class="surrounding-partners">
+                    <div class="partner-ring ring-1">
+                        <img src="images\Logo\58同城.png" alt="合作伙伴1" class="partner-logo">
+                        <img src="images\Logo\58招聘.png" alt="合作伙伴2" class="partner-logo">
+                        <img src="images\Logo\白底LOGO.png" alt="合作伙伴3" class="partner-logo">
+                        <img src="images\Logo\哔哩哔哩.png" alt="合作伙伴4" class="partner-logo">
+                    </div>
+                    <div class="partner-ring ring-2">
+                        <img src="images\Logo\东芝.png" alt="合作伙伴5" class="partner-logo">
+                        <img src="images\Logo\抖音.png" alt="合作伙伴6" class="partner-logo">
+                        <img src="images\Logo\华瑞安.png" alt="合作伙伴7" class="partner-logo">
+                        <img src="images\Logo\环球.png" alt="合作伙伴8" class="partner-logo">
+                        <img src="images\Logo\黄大年茶思屋logo.png" alt="合作伙伴9" class="partner-logo">
+                        <img src="images\Logo\京东.png" alt="合作伙伴10" class="partner-logo">
+                    </div>
+                    <div class="partner-ring ring-3">
+                        <img src="images\Logo\快手.png" alt="合作伙伴11" class="partner-logo">
+                        <img src="images\Logo\美的.png" alt="合作伙伴12" class="partner-logo">
+                        <img src="images\Logo\拼多多.png" alt="合作伙伴13" class="partner-logo">
+                        <img src="images\Logo\清北道远.png" alt="合作伙伴14" class="partner-logo">
+                        <img src="images\Logo\视频号.png" alt="合作伙伴15" class="partner-logo">
+                        <img src="images\Logo\淘宝.png" alt="合作伙伴16" class="partner-logo">
+                        <img src="images\Logo\薇安洛.png" alt="合作伙伴17" class="partner-logo">
+                        <img src="images\Logo\希沃.png" alt="合作伙伴18" class="partner-logo">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -225,6 +284,79 @@
             });
             marker.setLabel(label);
         }
+    </script>
+    <script>
+        // 霓虹灯效果
+        document.addEventListener('DOMContentLoaded', function() {
+            const neonImage = document.getElementById('neonImage');
+            const neonGlow = document.querySelector('.neon-glow');
+            const colors = [
+                'rgba(255, 0, 0, 0.15)',
+                'rgba(0, 255, 0, 0.15)',
+                'rgba(0, 0, 255, 0.15)',
+                'rgba(255, 255, 0, 0.15)',
+                'rgba(255, 0, 255, 0.15)',
+                'rgba(0, 255, 255, 0.15)'
+            ];
+            let currentColorIndex = 0;
+            let colorChangeCounter = 0;
+            const colorChangeThreshold = 5; // 增加这个值会降低颜色变化速度
+
+            function updateNeonGlow(e) {
+                if (!neonImage || !neonGlow) return;
+
+                const rect = neonImage.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                // 确保鼠标在图片范围内
+                if (x >= 0 && x <= rect.width && y >= 0 && y <= rect.height) {
+                    neonGlow.style.display = 'block';
+                    neonGlow.style.left = (x - 100) + 'px';
+                    neonGlow.style.top = (y - 100) + 'px';
+
+                    // 降低颜色变化速度
+                    colorChangeCounter++;
+                    if (colorChangeCounter >= colorChangeThreshold) {
+                        currentColorIndex = (currentColorIndex + 1) % colors.length;
+                        colorChangeCounter = 0;
+                        
+                        neonGlow.style.background = `radial-gradient(circle, 
+                            ${colors[currentColorIndex]} 0%,
+                            ${colors[currentColorIndex].replace('0.15', '0.08')} 30%,
+                            ${colors[currentColorIndex].replace('0.15', '0')} 70%
+                        )`;
+                    }
+                } else {
+                    neonGlow.style.display = 'none';
+                }
+            }
+
+            // 使用节流函数来限制事件触发频率
+            function throttle(func, limit) {
+                let inThrottle;
+                return function(event) {
+                    if (!inThrottle) {
+                        func(event);
+                        inThrottle = true;
+                        setTimeout(() => inThrottle = false, limit);
+                    }
+                }
+            }
+
+            // 监听鼠标移动，使用节流函数
+            document.addEventListener('mousemove', throttle(updateNeonGlow, 16));
+
+            // 移动端触摸支持
+            document.addEventListener('touchmove', function(e) {
+                e.preventDefault();
+                const touch = e.touches[0];
+                updateNeonGlow({
+                    clientX: touch.clientX,
+                    clientY: touch.clientY
+                });
+            }, { passive: false });
+        });
     </script>
 </body>
 </html>
