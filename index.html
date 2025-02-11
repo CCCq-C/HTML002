@@ -12,11 +12,14 @@
 <body>
     <!-- 导航栏 -->
     <nav class="nav">
-        <div class="mobile-menu-icon">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="nav-brand">
+            <img src="images/LOGOGOO.png" alt="YELLOWKASTLE" class="nav-logo">
         </div>
+        <button class="nav-toggle" aria-label="切换菜单">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <ul class="nav-list">
             <li class="nav-item"><a href="#home">首页</a></li>
             <li class="nav-item"><a href="#about">关于我们</a></li>
@@ -89,8 +92,8 @@
                             <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
                                 <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
                                 <feColorMatrix in="blur" type="matrix" values="
-                                    0 0 0 0 0
-                                    0 1 0 0 0
+                                    1 0 0 0 1   
+                                    0 1 0 0 0.84  
                                     0 0 0 0 0
                                     0 0 0 15 -5" result="glow"/>
                                 <feMerge>
@@ -219,36 +222,8 @@
         <div class="section-content">
             <h2 class="section-title fade-up">合作伙伴</h2>
             <p class="section-text fade-up">我们深耕行业多年，为新兴品牌保驾护航，少走弯路，让每一分投入精准转化为品牌影响力与销售业绩。</p>
-            <div class="partner-grid fade-up">
-                <div class="main-partner">
-                    <img src="images/LOGOGOO.png" alt="主要合作伙伴" class="main-logo">
-                </div>
-                <div class="surrounding-partners">
-                    <div class="partner-ring ring-1">
-                        <img src="images\Logo\58同城.png" alt="合作伙伴1" class="partner-logo">
-                        <img src="images\Logo\58招聘.png" alt="合作伙伴2" class="partner-logo">
-                        <img src="images\Logo\白底LOGO.png" alt="合作伙伴3" class="partner-logo">
-                        <img src="images\Logo\哔哩哔哩.png" alt="合作伙伴4" class="partner-logo">
-                    </div>
-                    <div class="partner-ring ring-2">
-                        <img src="images\Logo\东芝.png" alt="合作伙伴5" class="partner-logo">
-                        <img src="images\Logo\抖音.png" alt="合作伙伴6" class="partner-logo">
-                        <img src="images\Logo\华瑞安.png" alt="合作伙伴7" class="partner-logo">
-                        <img src="images\Logo\环球.png" alt="合作伙伴8" class="partner-logo">
-                        <img src="images\Logo\黄大年茶思屋logo.png" alt="合作伙伴9" class="partner-logo">
-                        <img src="images\Logo\京东.png" alt="合作伙伴10" class="partner-logo">
-                    </div>
-                    <div class="partner-ring ring-3">
-                        <img src="images\Logo\快手.png" alt="合作伙伴11" class="partner-logo">
-                        <img src="images\Logo\美的.png" alt="合作伙伴12" class="partner-logo">
-                        <img src="images\Logo\拼多多.png" alt="合作伙伴13" class="partner-logo">
-                        <img src="images\Logo\清北道远.png" alt="合作伙伴14" class="partner-logo">
-                        <img src="images\Logo\视频号.png" alt="合作伙伴15" class="partner-logo">
-                        <img src="images\Logo\淘宝.png" alt="合作伙伴16" class="partner-logo">
-                        <img src="images\Logo\薇安洛.png" alt="合作伙伴17" class="partner-logo">
-                        <img src="images\Logo\希沃.png" alt="合作伙伴18" class="partner-logo">
-                    </div>
-                </div>
+            <div class="partner-grid">
+                <div class="partner-background"></div>
             </div>
         </div>
     </section>
